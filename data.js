@@ -1,5 +1,5 @@
 // ===== 在這裡新增／修改頻道資料 =====
-const BOOK={title:"優質教育頻道選集",en:"Curated Learning Channels",subtitle:"跨平台 · 精選 · 自學指南",author:"第十組：徐瑞穎、劉宇崴、林建宇、林哲旭　期末專題"};
+const BOOK={title:"優質教育頻道選集",en:"Curated Learning Channels",subtitle:"跨平台 · 精選 · 自學指南",author:"第十組：徐瑞穎、劉宇崴、林建宇、林哲旭"};
 const CHANNELS=[
 {name:"泛科學 PanSci",platform:"YouTube",tags:["科學","台灣","綜合"],intro:"台灣最大的科學傳播平台之一，以輕鬆的方式解說科學新知、時事與生活中的科學。",why:"中文內容、貼近台灣生活，非常適合當作科學入門。",url:"https://www.youtube.com/results?search_query=泛科學"},
 {name:"3Blue1Brown",platform:"YouTube",tags:["數學","視覺化","英文"],intro:"以精美的動畫講解線性代數、微積分與神經網路等數學概念，著重直覺理解。",why:"把抽象的數學變成看得見的畫面，是理解公式背後意義的最佳選擇。",url:"https://www.youtube.com/results?search_query=3Blue1Brown"},
