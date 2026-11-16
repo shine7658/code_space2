@@ -71,3 +71,19 @@ p{line-height:2;margin:.6em 0}
 .rel small{display:block;color:var(--sub)}
 .empty{color:var(--sub);padding:24px 0;text-align:center}
 @media (max-width:560px){body{padding:0}.book{border-radius:0;height:100%}.page{padding:30px 22px 18px 34px}.nav{padding-left:30px}#toc{display:none}}
+/* ===== 雙頁模式（電腦／平板） ===== */
+.endp{text-align:center;margin-top:30%;color:var(--sub);font-size:20px;letter-spacing:.3em}
+.stage>.pgL{display:none}
+.spread{width:min(1280px,100%);height:min(860px,100%);overflow:visible;box-shadow:0 30px 60px var(--shadow);transition:transform .7s cubic-bezier(.45,.05,.3,1)}
+.spread::before{display:none}
+.spread .stage{overflow:visible}
+.spread .stage>.pgL{display:block;right:50%;border-radius:6px 0 0 6px}
+.spread .stage>.pgR{left:50%}
+.spread .pgL{padding:46px 38px 26px 52px}
+.spread .pgR{padding:46px 52px 26px 38px}
+.spread .stage::after{content:"";position:absolute;left:50%;top:0;bottom:0;width:70px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,rgba(0,0,0,.2) 50%,transparent);pointer-events:none;z-index:4}
+.spread .leaf{left:50%}
+.spread.is-cover{background:transparent;box-shadow:none;transform:translateX(-25%)}
+.spread.is-cover .stage::after{display:none}
+.spread.is-cover .stage>.pgL{visibility:hidden}
+.spread.is-cover .stage>.pgR{background:linear-gradient(145deg,#6a2519,#3a1210);padding:0;box-shadow:0 30px 60px var(--shadow),-6px 0 0 #5b1f17,-9px 0 0 #3a1210}
